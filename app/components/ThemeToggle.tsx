@@ -12,7 +12,7 @@ const ThemeToggle = () => {
     const newTheme = theme === "dark" ? "light" : "dark";
     dispatch(setTheme(newTheme));
     localStorage.setItem("theme", newTheme);
-
+    document.documentElement.setAttribute("data-theme", newTheme);
     console.log(newTheme)
   };
 

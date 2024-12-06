@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import Header from "./Header";
 
 import store from "../redux/store";
+import Sidebar from "./Sidebar";
 
 export default function ClientSessionProvider({
   children,
@@ -26,7 +27,6 @@ export default function ClientSessionProvider({
 
   return <SessionProvider session={session}>
             <Provider store={store}>
-              <Header/>
               {children}
             </Provider>
         </SessionProvider>;

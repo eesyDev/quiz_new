@@ -4,18 +4,30 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1C1D1D;
+  --dark-gray: #E8E8E8;
+  --blue: #14A1DB;
+  --border-radius: 14px;
+}
+
+:root[data-theme="light"] {
+  --background: #fff;
+  --foreground: #1C1D1D;
+}
+
+:root[data-theme="dark"] {
+  --background: #1C1D1D;
+  --foreground: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1C1D1D;
+    --foreground: #fff;
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }

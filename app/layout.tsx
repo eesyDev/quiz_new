@@ -36,16 +36,15 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body >
         {/* Обёртка клиента */}
         <ClientSessionProvider>
-          <div className="page grid grid-cols-[250px_1fr] gap-4">
-            <div className="">
+          <div className="page grid grid-cols-[280px_1fr] gap-6">
+            <div className="sidebar-outer">
               <Sidebar/>
-              ich bin auslender
             </div>
-            <div className="page-wrapper">
+            <div className="page-wrapper pr-10">
               <Header />
+              {children}
             </div>
           </div>
-          {children}
         </ClientSessionProvider>
       </body>
     </html>

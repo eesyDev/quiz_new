@@ -5,9 +5,12 @@
 :root {
   --background: #ffffff;
   --foreground: #1C1D1D;
-  --dark-gray: #E8E8E8;
+  --gray: #E8E8E8;
   --blue: #14A1DB;
   --border-radius: 14px;
+  --light-gray: #F4F4F4;
+  --dark-gray: #888888;
+  --text-color: #1C1D1D;
 }
 
 :root[data-theme="light"] {

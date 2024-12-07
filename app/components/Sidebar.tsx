@@ -8,6 +8,7 @@ import { pagesSidebar } from '../data/data';
 import { RootState } from "../redux/rootReducer";
 import logoWhite from '/public/icons/logo_white.svg';
 import logoDark from '/public/icons/logo_dark.svg';
+import ThemeToggle from './ThemeToggle';
 
 
 const Sidebar = () => {
@@ -23,17 +24,17 @@ const Sidebar = () => {
   return (
     <aside className='sidebar py-12 px-8'>
         <div className="sidebar__logo">
-            <Link href="/">
+            <Link href="/" className='px-4 flex justify-start'>
               {logo && <img src={logo.src} alt="logo" />}
             </Link>
           </div>
-        <ul className='links flex flex-col mt-8 gap-6'>
+        <ul className='links flex flex-col mt-8 gap-3'>
         {
             pagesSidebar.map((item, index) => {
                 const Icon = item.icon; // icon content
                 return (
-                    <li key={index}>
-                    <Link href={item.link} className='flex gap-4 items-center'>
+                    <li key={index} className=''>
+                    <Link href={item.link} className='flex gap-2 items-center py-2 px-4'>
                         <Icon className='icon'/>
                     {item.name}
                     </Link></li>
@@ -41,6 +42,7 @@ const Sidebar = () => {
                 })
         }
         </ul>
+        <ThemeToggle/>
     </aside>
   )
 }

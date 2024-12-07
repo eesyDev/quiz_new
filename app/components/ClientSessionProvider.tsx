@@ -25,7 +25,7 @@ export default function ClientSessionProvider({
     fetchSession();
   }, []);
 
-  return <SessionProvider session={session}>
+  return <SessionProvider>
             <Provider store={store}>
               {children}
             </Provider>

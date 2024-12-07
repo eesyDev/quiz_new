@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Link from "next/link";
+import { CiSearch } from "react-icons/ci";
+
 import { RootState } from "../redux/rootReducer";
 import { setTheme } from "../redux/slices/themeSlice";
 import LoginButton from "./LoginButton";
@@ -29,8 +31,10 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <div className="header__wrapper flex justify-between">
-          
-          <ThemeToggle/>
+          <div className="input-layer">
+            <CiSearch/>
+          <input type="search" className="input" placeholder="search..."/>
+          </div>
           <LoginButton />
         </div>
       </div>

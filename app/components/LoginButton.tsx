@@ -10,7 +10,7 @@ export default function LoginButton() {
     return (
       <div>
         {/* <p>Welcome, {session.user?.name}!</p> */}
-        <button onClick={() => signOut()} className="btn btn--secondary">Sign Out</button>
+        <button onClick={() => signOut()} className="btn btn--primary">Sign Out</button>
       </div>
     );
   }

@@ -117,3 +117,51 @@ h2,
         padding-left: 42px;
     }
 }
+
+.card {
+    border-radius: .5rem;
+    background-color: var(--background);
+    box-shadow: 0 0 63px rgba(0, 0, 0, .07);
+    padding: 1.5em;
+    height: fit-content;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__icon {
+        background-color: var(--foreground);
+        padding: 3px;
+        color: var(--background);
+        border-radius: 6px;
+        font-size: 24px;
+    }
+    &__content {
+        margin-top: 1em;
+        color: var(--dark-gray);
+    }
+}
+
+.card-extended {
+    .card__icon {
+        display: flex;
+        background-color: var(--light-gray);
+        width: 50px;
+        height: 50px;
+        font-size: 35px;
+        color: var(--foreground);
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.progress-container {
+    background-color: var(--gray);
+    height: 15px;
+    border-radius: 15px;
+    .progress-bar {
+        background-color: var(--foreground);
+        height: 15px;
+        border-radius: 15px;
+    }
+}

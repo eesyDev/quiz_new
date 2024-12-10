@@ -1,3 +1,3 @@
-// import type { NextConfig } from "next";
+const nextConfig = {};
 
-export default {};
+export default nextConfig;

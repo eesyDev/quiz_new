@@ -84,7 +84,18 @@ const Dashboard = () => {
                                     <PieChart />
                                 </div>
                             </div>
-                            
+                        </div>
+                        <div className="dashboard-cards-extended flex mt-12 gap-4">
+                            <div className="dashboard-cards-outer w-2/3">
+                                <h2 className="dashboard-card-header">
+                                    Популярные курсы
+                                </h2>
+                            </div>
+                            <div className="cards-aside w-1/3">
+                                <h3 className="dashboard-card-header">
+                                    Скоро на платформе
+                                </h3>
+                            </div>
                         </div>
                     </>
                 )

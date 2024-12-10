@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DesktopCard = ({ title, icon, content, classNameProp } : DesktopCard) => {
+const DesktopCard = ({ title, icon, content, classNameProp } : IDesktopCard) => {
   return (
     <div className={`card ${classNameProp}`}>
         <div className="card__header">
